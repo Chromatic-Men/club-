@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHROMATIC MEN/NEWS</title>
+    <link rel="STYLESHEET" href="VISIT.CSS">
+</head>
+<body>
+    <div id="hero">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <div class="user">
+                <a href="chromatic men.HTML">   <button type="button"><span></span>HOME</button></a>
+               <div class="container">
+                   <div class="info">
+                       <h1>EXPLORE</h1>
+                       <P>GET MORE IN NEXT MONTH</P>
+                       
+                       <input type="text " placeholder="search">
+
+               </div>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="small1.png" class=" active thumbnail">
+                       <img src="small2.png" class=" thumbnail">
+                       <img src="small3.png" class=" thumbnail">
+                       <img src="small4.png" class=" thumbnail">
+                       <img src="small5.png" class=" thumbnail">
+                <p>image here</p>
+            </div>
+            <img src="right-arrow.png" id="next">
+        </div>
+    </div>
+    <script>
+
+
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementsByID("hero");
+
+        var backgroundImg = new Array(
+            "bg1.png",
+            "bg2.png",
+            "bg3.png",
+            "bg4.png",
+            "bg5.png",
+            
+         
+        );
+         let i = 0;
+        next.onclick = function(){
+            hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+            i++;
+
+        }
+
+
+
+    </script>
+</body>
